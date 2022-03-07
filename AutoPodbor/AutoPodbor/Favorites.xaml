@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AutoPodbor.Favorites"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Избранное"
+    BackgroundColor="Black"
+    BackgroundImageSource="background2.png"
+    IconImageSource="favoritesIcon.png">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame
+                Margin="0,47,0,0"
+                Padding="0"
+                BackgroundColor="White"
+                BorderColor="Black"
+                CornerRadius="10"
+                HasShadow="False"
+                HeightRequest="43"
+                HorizontalOptions="Center"
+                Opacity="0.4"
+                WidthRequest="200">
+                <SearchBar
+                    BackgroundColor="Transparent"
+                    CancelButtonColor="Black"
+                    Opacity="1"
+                    Placeholder="Найти..."
+                    PlaceholderColor="Black"
+                    TextColor="Black" />
+            </Frame>
+            <Label
+                Margin="27,35,0,0"
+                FontAttributes="Bold"
+                FontSize="38"
+                Text="Закладки"
+                TextColor="White" />
+            <Frame
+                Margin="10,15,10,0"
+                BackgroundColor="Transparent"
+                CornerRadius="12"
+                HeightRequest="375">
+                <Grid>
+                    <Image HorizontalOptions="Center" Source="audiTest.png" />
+                    <Frame
+                        BackgroundColor="Black"
+                        CornerRadius="13"
+                        HeightRequest="130"
+                        HorizontalOptions="Center"
+                        VerticalOptions="End"
+                        WidthRequest="280">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="200" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="31" />
+                                <RowDefinition Height="47" />
+                                <RowDefinition Height="0" />
+                            </Grid.RowDefinitions>
+                            <Label
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                FontAttributes="Bold"
+                                FontSize="29"
+                                Text="Audi R8 V10"
+                                TextColor="White" />
+                            <ImageButton
+                                Grid.Row="0"
+                                Grid.Column="2"
+                                BackgroundColor="Transparent"
+                                HorizontalOptions="Center"
+                                Source="favoritesYellowIcon.png"
+                                WidthRequest="18" />
+
+                            <Label
+                                Grid.Row="1"
+                                Grid.ColumnSpan="3"
+                                Margin="0,4,0,0"
+                                FontSize="12"
+                                Text="Audi R8 — это среднемоторный спорткар, выпускающийся кузовами купе. Автомобили второго поколения делают с 2015 года."
+                                TextColor="#E2E2E2" />
+                            <Button
+                                Grid.Row="3"
+                                Grid.Column="0"
+                                BackgroundColor="#1F6BFF"
+                                BorderColor="#82A5FF"
+                                BorderWidth="1"
+                                CornerRadius="7"
+                                FontAttributes="Bold"
+                                FontFamily="OpenSans-Bold2.ttf"
+                                FontSize="12"
+                                HeightRequest="40"
+                                HorizontalOptions="Start"
+                                Text="Подробнее"
+                                TextColor="White"
+                                WidthRequest="113" />
+                        </Grid>
+                    </Frame>
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

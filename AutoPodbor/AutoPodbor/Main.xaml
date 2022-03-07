@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AutoPodbor.Main"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Главная"
+    BackgroundColor="Black"
+    BackgroundImageSource="background2.png"
+    IconImageSource="mainIcon.png">
+
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Grid Margin="0,50,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="250" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="42" />
+                </Grid.RowDefinitions>
+                <Frame
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Margin="0"
+                    Padding="0"
+                    BackgroundColor="White"
+                    BorderColor="Black"
+                    CornerRadius="10"
+                    HasShadow="False"
+                    HeightRequest="35"
+                    HorizontalOptions="End"
+                    Opacity="0.4"
+                    WidthRequest="200">
+                    <SearchBar
+                        BackgroundColor="Transparent"
+                        CancelButtonColor="Black"
+                        Opacity="1"
+                        Placeholder="Найти..."
+                        PlaceholderColor="Black"
+                        TextColor="Black" />
+                </Frame>
+                <ImageButton
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    BackgroundColor="Transparent"
+                    HorizontalOptions="End"
+                    Source="sortByIcon.png" />
+                <ImageButton
+                    x:Name="configButton"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    BackgroundColor="Transparent"
+                    HorizontalOptions="Center"
+                    Source="configIcon.png"
+                    Clicked="configButton_Clicked"/>
+            </Grid>
+            <Label
+                Margin="27,35,0,0"
+                FontAttributes="Bold"
+                FontSize="38"
+                Text="Выберите машину"
+                TextColor="White" />
+            <Label
+                Margin="28,8,20,0"
+                FontSize="14"
+                Text="Тут вы можете выбрать понравившуюся Вам машину и посмотреть о ней информацию и фотографии"
+                TextColor="#E2E2E2" />
+
+            <Frame
+                Margin="10,15,10,0"
+                BackgroundColor="Transparent"
+                CornerRadius="12"
+                HeightRequest="375">
+                <Grid>
+                    <Image HorizontalOptions="Center" Source="audiTest.png" />
+                    <Frame
+                        BackgroundColor="Black"
+                        CornerRadius="13"
+                        HeightRequest="130"
+                        HorizontalOptions="Center"
+                        VerticalOptions="End"
+                        WidthRequest="280">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="200" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="31" />
+                                <RowDefinition Height="47" />
+                                <RowDefinition Height="0" />
+                            </Grid.RowDefinitions>
+                            <Label
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                FontAttributes="Bold"
+                                FontSize="29"
+                                Text="Audi R8 V10"
+                                TextColor="White" />
+                            <ImageButton
+                                Grid.Row="0"
+                                Grid.Column="2"
+                                BackgroundColor="Transparent"
+                                HorizontalOptions="Center"
+                                Source="favoritesIcon.png"
+                                WidthRequest="18" />
+                            <ImageButton
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                BackgroundColor="Transparent"
+                                HorizontalOptions="Center"
+                                Source="hideIcon.png"
+                                WidthRequest="23" />
+                            <Label
+                                Grid.Row="1"
+                                Grid.ColumnSpan="3"
+                                Margin="0,4,0,0"
+                                FontSize="12"
+                                Text="Audi R8 — это среднемоторный спорткар, выпускающийся кузовами купе. Автомобили второго поколения делают с 2015 года."
+                                TextColor="#E2E2E2" />
+                            <Button
+                                Grid.Row="3"
+                                Grid.Column="0"
+                                BackgroundColor="#1F6BFF"
+                                BorderColor="#82A5FF"
+                                BorderWidth="1"
+                                CornerRadius="7"
+                                FontAttributes="Bold"
+                                FontFamily="OpenSans-Bold2.ttf"
+                                FontSize="12"
+                                HeightRequest="40"
+                                HorizontalOptions="Start"
+                                Text="Подробнее"
+                                TextColor="White"
+                                WidthRequest="113" />
+                        </Grid>
+                    </Frame>
+                </Grid>
+            </Frame>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
