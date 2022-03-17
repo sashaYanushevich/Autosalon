@@ -1,4 +1,7 @@
-﻿using System;
+﻿
+
+using MySqlConnector;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -20,6 +23,10 @@ namespace AutoPodbor
         private string engine;
         private string wheelDrive;
         private string urlImg;
+
+        public Car()
+        {
+        }
 
         public Car(int id, string mark, string description, string model, string generation, int yearStart, int yearEnd, double price, double engineVolume, string transmission, string body, string engine, string wheelDrive, string urlImg)
         {
@@ -110,6 +117,39 @@ namespace AutoPodbor
             set => this.urlImg = value;
         }
 
+        public List<Car> ReadCars(List<Car> cars)
+        {
+            string connStr = "server=194.87.210.23;user=Sasha2;database=autoPodbor;password=Qazx1234;";
+            MySqlConnection conn = new MySqlConnection(connStr);
+            conn.Open();
+            string sql = "SELECT * FROM cars";
+            MySqlCommand command = new MySqlCommand(sql, conn);
+            MySqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                cars.Add(new Car(
+                    Convert.ToInt32(reader[0].ToString()),
+                    reader[1].ToString(),
+                    reader[3].ToString(),
+                    reader[2].ToString(),
+                    reader[4].ToString(),
+                    Convert.ToInt32(reader[5].ToString()),
+                    Convert.ToInt32(reader[6].ToString()),
+                    Convert.ToDouble(reader[7].ToString()),
+                    Convert.ToDouble(reader[8].ToString()),
+                    reader[9].ToString(),
+                    reader[10].ToString(),
+                    reader[11].ToString(),
+                    reader[12].ToString(),
+                    $"http://194.87.210.23/images/{reader[13].ToString()}.jpg"
+                ));
+            }
+            reader.Close();
+            conn.Close();
+            return cars;
+
+        }
+        
 
     }
 

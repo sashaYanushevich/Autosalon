@@ -16,7 +16,7 @@
 
         <StackLayout>
 
-            <Grid Margin="0,20,20,0">
+            <Grid Margin="0,45,20,0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="250" />
                     <ColumnDefinition Width="*" />
@@ -35,7 +35,7 @@
                     CornerRadius="10"
                     HasShadow="False"
                     HeightRequest="35"
-                    HorizontalOptions="End"
+                    HorizontalOptions="Center"
                     Opacity="0.4"
                     WidthRequest="200">
                     <SearchBar
@@ -66,7 +66,7 @@
                     <Label
                         Margin="27,25,0,0"
                         FontAttributes="Bold"
-                        FontSize="38"
+                        FontSize="35"
                         Text="Выберите машину"
                         TextColor="White" />
                     <Label
@@ -76,24 +76,27 @@
                         TextColor="#E2E2E2" />
 
                     <Frame
-                        Margin="10,15,10,0"
+                        Margin="5,0,5,0"
                         BackgroundColor="Transparent"
-                        CornerRadius="32"
-                        HeightRequest="375">
+                        CornerRadius="12"
+                        HeightRequest="415"
+                        HorizontalOptions="Start"
+                        VerticalOptions="Start">
                         <Grid>
                             <Image
                                 x:Name="AutoImg_1"
                                 Aspect="AspectFit"
-                                HeightRequest="400"
-                                HorizontalOptions="Center"
+                                HeightRequest="300"
                                 Source="noAutoImg.png"
+                                VerticalOptions="Start"
                                 WidthRequest="350" />
                             <Frame
+                                Margin="0,0,0,0"
                                 BackgroundColor="Black"
                                 CornerRadius="13"
                                 HeightRequest="130"
                                 HorizontalOptions="Center"
-                                VerticalOptions="End"
+                                VerticalOptions="EndAndExpand"
                                 WidthRequest="310">
                                 <Grid>
                                     <Grid.ColumnDefinitions>
@@ -111,8 +114,8 @@
                                         Grid.Row="0"
                                         Grid.Column="0"
                                         FontAttributes="Bold"
-                                        FontSize="29"
-                                        Text="Audi R8 V10"
+                                        FontSize="27"
+                                        Text="NoN"
                                         TextColor="White" />
                                     <ImageButton
                                         Grid.Row="0"
@@ -134,7 +137,7 @@
                                         Grid.ColumnSpan="3"
                                         Margin="0,4,0,0"
                                         FontSize="12"
-                                        Text="Audi R8 — это среднемоторный спорткар, выпускающийся кузовами купе. Автомобили второго поколения делают с 2015 года."
+                                        Text="NoN"
                                         TextColor="#E2E2E2" />
                                     <Button
                                         x:Name="moreButton_1"
@@ -160,15 +163,15 @@
                     <Frame
                         Margin="10,15,10,0"
                         BackgroundColor="Transparent"
-                        CornerRadius="32"
-                        HeightRequest="375">
+                        HeightRequest="415">
                         <Grid>
                             <Image
                                 x:Name="AutoImg_2"
                                 Aspect="AspectFit"
-                                HeightRequest="400"
+                                HeightRequest="300"
                                 HorizontalOptions="Center"
                                 Source="noAutoImg.png"
+                                VerticalOptions="Start"
                                 WidthRequest="350" />
                             <Frame
                                 BackgroundColor="Black"
@@ -193,8 +196,8 @@
                                         Grid.Row="0"
                                         Grid.Column="0"
                                         FontAttributes="Bold"
-                                        FontSize="29"
-                                        Text="Audi R8 V10"
+                                        FontSize="27"
+                                        Text="NoN"
                                         TextColor="White" />
                                     <ImageButton
                                         Grid.Row="0"
@@ -216,7 +219,7 @@
                                         Grid.ColumnSpan="3"
                                         Margin="0,4,0,0"
                                         FontSize="12"
-                                        Text="Audi R8 — это среднемоторный спорткар, выпускающийся кузовами купе. Автомобили второго поколения делают с 2015 года."
+                                        Text="NoN"
                                         TextColor="#E2E2E2" />
                                     <Button
                                         x:Name="moreButton_2"
@@ -242,15 +245,16 @@
                     <Frame
                         Margin="10,15,10,0"
                         BackgroundColor="Transparent"
-                        CornerRadius="32"
-                        HeightRequest="375">
+                        HeightRequest="415">
+
                         <Grid>
                             <Image
                                 x:Name="AutoImg_3"
                                 Aspect="AspectFit"
-                                HeightRequest="400"
+                                HeightRequest="300"
                                 HorizontalOptions="Center"
                                 Source="noAutoImg.png"
+                                VerticalOptions="Start"
                                 WidthRequest="350" />
                             <Frame
                                 BackgroundColor="Black"
@@ -275,8 +279,8 @@
                                         Grid.Row="0"
                                         Grid.Column="0"
                                         FontAttributes="Bold"
-                                        FontSize="29"
-                                        Text="Audi R8 V10"
+                                        FontSize="27"
+                                        Text="NoN"
                                         TextColor="White" />
                                     <ImageButton
                                         Grid.Row="0"
@@ -298,7 +302,7 @@
                                         Grid.ColumnSpan="3"
                                         Margin="0,4,0,0"
                                         FontSize="12"
-                                        Text="Audi R8 — это среднемоторный спорткар, выпускающийся кузовами купе. Автомобили второго поколения делают с 2015 года."
+                                        Text="NoN"
                                         TextColor="#E2E2E2" />
                                     <Button
                                         x:Name="moreButton_3"
@@ -316,8 +320,7 @@
                                         HorizontalOptions="Start"
                                         Text="Подробнее"
                                         TextColor="White"
-                                        WidthRequest="125" 
-                                        />
+                                        WidthRequest="125" />
                                 </Grid>
                             </Frame>
                         </Grid>
@@ -325,15 +328,15 @@
                     <Frame
                         Margin="10,15,10,0"
                         BackgroundColor="Transparent"
-                        CornerRadius="32"
-                        HeightRequest="375">
+                        HeightRequest="415">
                         <Grid>
                             <Image
                                 x:Name="AutoImg_4"
                                 Aspect="AspectFit"
-                                HeightRequest="400"
+                                HeightRequest="300"
                                 HorizontalOptions="Center"
                                 Source="noAutoImg.png"
+                                VerticalOptions="Start"
                                 WidthRequest="350" />
                             <Frame
                                 BackgroundColor="Black"
@@ -358,8 +361,8 @@
                                         Grid.Row="0"
                                         Grid.Column="0"
                                         FontAttributes="Bold"
-                                        FontSize="29"
-                                        Text="Audi R8 V10"
+                                        FontSize="27"
+                                        Text="NoN"
                                         TextColor="White" />
                                     <ImageButton
                                         Grid.Row="0"
@@ -381,7 +384,7 @@
                                         Grid.ColumnSpan="3"
                                         Margin="0,4,0,0"
                                         FontSize="12"
-                                        Text="Audi R8 — это среднемоторный спорткар, выпускающийся кузовами купе. Автомобили второго поколения делают с 2015 года."
+                                        Text="NoN"
                                         TextColor="#E2E2E2" />
                                     <Button
                                         x:Name="moreButton_4"
@@ -407,15 +410,15 @@
                     <Frame
                         Margin="10,15,10,0"
                         BackgroundColor="Transparent"
-                        CornerRadius="32"
-                        HeightRequest="375">
+                        HeightRequest="415">
                         <Grid>
                             <Image
                                 x:Name="AutoImg_5"
                                 Aspect="AspectFit"
-                                HeightRequest="400"
+                                HeightRequest="300"
                                 HorizontalOptions="Center"
                                 Source="noAutoImg.png"
+                                VerticalOptions="Start"
                                 WidthRequest="350" />
                             <Frame
                                 BackgroundColor="Black"
@@ -440,8 +443,8 @@
                                         Grid.Row="0"
                                         Grid.Column="0"
                                         FontAttributes="Bold"
-                                        FontSize="29"
-                                        Text="Audi R8 V10"
+                                        FontSize="27"
+                                        Text="NoN"
                                         TextColor="White" />
                                     <ImageButton
                                         Grid.Row="0"
@@ -463,7 +466,7 @@
                                         Grid.ColumnSpan="3"
                                         Margin="0,4,0,0"
                                         FontSize="12"
-                                        Text="Audi R8 — это среднемоторный спорткар, выпускающийся кузовами купе. Автомобили второго поколения делают с 2015 года."
+                                        Text="NoN"
                                         TextColor="#E2E2E2" />
                                     <Button
                                         x:Name="moreButton_5"
@@ -472,7 +475,7 @@
                                         BackgroundColor="#1F6BFF"
                                         BorderColor="#82A5FF"
                                         BorderWidth="1"
-                                       Clicked="moreButton_5_Clicked"
+                                        Clicked="moreButton_5_Clicked"
                                         CornerRadius="7"
                                         FontAttributes="Bold"
                                         FontFamily="OpenSans-Bold2.ttf"
@@ -489,15 +492,15 @@
                     <Frame
                         Margin="10,15,10,0"
                         BackgroundColor="Transparent"
-                        CornerRadius="32"
-                        HeightRequest="375">
+                        HeightRequest="415">
                         <Grid>
                             <Image
                                 x:Name="AutoImg_6"
                                 Aspect="AspectFit"
-                                HeightRequest="400"
+                                HeightRequest="300"
                                 HorizontalOptions="Center"
                                 Source="noAutoImg.png"
+                                VerticalOptions="Start"
                                 WidthRequest="350" />
                             <Frame
                                 BackgroundColor="Black"
@@ -522,8 +525,8 @@
                                         Grid.Row="0"
                                         Grid.Column="0"
                                         FontAttributes="Bold"
-                                        FontSize="29"
-                                        Text="Audi R8 V10"
+                                        FontSize="27"
+                                        Text="NoN"
                                         TextColor="White" />
                                     <ImageButton
                                         Grid.Row="0"
@@ -545,7 +548,7 @@
                                         Grid.ColumnSpan="3"
                                         Margin="0,4,0,0"
                                         FontSize="12"
-                                        Text="Audi R8 — это среднемоторный спорткар, выпускающийся кузовами купе. Автомобили второго поколения делают с 2015 года."
+                                        Text="NoN"
                                         TextColor="#E2E2E2" />
                                     <Button
                                         x:Name="moreButton_6"
@@ -571,15 +574,15 @@
                     <Frame
                         Margin="10,15,10,0"
                         BackgroundColor="Transparent"
-                        CornerRadius="32"
-                        HeightRequest="375">
+                        HeightRequest="415">
                         <Grid>
                             <Image
                                 x:Name="AutoImg_7"
                                 Aspect="AspectFit"
-                                HeightRequest="400"
+                                HeightRequest="300"
                                 HorizontalOptions="Center"
                                 Source="noAutoImg.png"
+                                VerticalOptions="Start"
                                 WidthRequest="350" />
                             <Frame
                                 BackgroundColor="Black"
@@ -604,8 +607,8 @@
                                         Grid.Row="0"
                                         Grid.Column="0"
                                         FontAttributes="Bold"
-                                        FontSize="29"
-                                        Text="Audi R8 V10"
+                                        FontSize="27"
+                                        Text="NoN"
                                         TextColor="White" />
                                     <ImageButton
                                         Grid.Row="0"
@@ -627,7 +630,7 @@
                                         Grid.ColumnSpan="3"
                                         Margin="0,4,0,0"
                                         FontSize="12"
-                                        Text="Audi R8 — это среднемоторный спорткар, выпускающийся кузовами купе. Автомобили второго поколения делают с 2015 года."
+                                        Text="NoN"
                                         TextColor="#E2E2E2" />
                                     <Button
                                         x:Name="moreButton_7"
@@ -653,15 +656,15 @@
                     <Frame
                         Margin="10,15,10,0"
                         BackgroundColor="Transparent"
-                        CornerRadius="32"
-                        HeightRequest="375">
+                        HeightRequest="415">
                         <Grid>
                             <Image
                                 x:Name="AutoImg_8"
                                 Aspect="AspectFit"
-                                HeightRequest="400"
+                                HeightRequest="300"
                                 HorizontalOptions="Center"
                                 Source="noAutoImg.png"
+                                VerticalOptions="Start"
                                 WidthRequest="350" />
                             <Frame
                                 BackgroundColor="Black"
@@ -686,8 +689,8 @@
                                         Grid.Row="0"
                                         Grid.Column="0"
                                         FontAttributes="Bold"
-                                        FontSize="29"
-                                        Text="Audi R8 V10"
+                                        FontSize="27"
+                                        Text="NoN"
                                         TextColor="White" />
                                     <ImageButton
                                         Grid.Row="0"
@@ -709,7 +712,7 @@
                                         Grid.ColumnSpan="3"
                                         Margin="0,4,0,0"
                                         FontSize="12"
-                                        Text="Audi R8 — это среднемоторный спорткар, выпускающийся кузовами купе. Автомобили второго поколения делают с 2015 года."
+                                        Text="NoN"
                                         TextColor="#E2E2E2" />
                                     <Button
                                         x:Name="moreButton_8"
@@ -735,15 +738,15 @@
                     <Frame
                         Margin="10,15,10,0"
                         BackgroundColor="Transparent"
-                        CornerRadius="32"
-                        HeightRequest="375">
+                        HeightRequest="415">
                         <Grid>
                             <Image
                                 x:Name="AutoImg_9"
                                 Aspect="AspectFit"
-                                HeightRequest="400"
+                                HeightRequest="300"
                                 HorizontalOptions="Center"
                                 Source="noAutoImg.png"
+                                VerticalOptions="Start"
                                 WidthRequest="350" />
                             <Frame
                                 BackgroundColor="Black"
@@ -768,8 +771,8 @@
                                         Grid.Row="0"
                                         Grid.Column="0"
                                         FontAttributes="Bold"
-                                        FontSize="29"
-                                        Text="Audi R8 V10"
+                                        FontSize="27"
+                                        Text="NoN"
                                         TextColor="White" />
                                     <ImageButton
                                         Grid.Row="0"
@@ -791,7 +794,7 @@
                                         Grid.ColumnSpan="3"
                                         Margin="0,4,0,0"
                                         FontSize="12"
-                                        Text="Audi R8 — это среднемоторный спорткар, выпускающийся кузовами купе. Автомобили второго поколения делают с 2015 года."
+                                        Text="NoN"
                                         TextColor="#E2E2E2" />
                                     <Button
                                         x:Name="moreButton_9"
@@ -817,15 +820,15 @@
                     <Frame
                         Margin="10,15,10,0"
                         BackgroundColor="Transparent"
-                        CornerRadius="32"
-                        HeightRequest="375">
+                        HeightRequest="415">
                         <Grid>
                             <Image
                                 x:Name="AutoImg_10"
                                 Aspect="AspectFit"
-                                HeightRequest="400"
+                                HeightRequest="300"
                                 HorizontalOptions="Center"
                                 Source="noAutoImg.png"
+                                VerticalOptions="Start"
                                 WidthRequest="350" />
                             <Frame
                                 BackgroundColor="Black"
@@ -850,8 +853,8 @@
                                         Grid.Row="0"
                                         Grid.Column="0"
                                         FontAttributes="Bold"
-                                        FontSize="29"
-                                        Text="Audi R8 V10"
+                                        FontSize="27"
+                                        Text="NoN"
                                         TextColor="White" />
                                     <ImageButton
                                         Grid.Row="0"
@@ -873,7 +876,7 @@
                                         Grid.ColumnSpan="3"
                                         Margin="0,4,0,0"
                                         FontSize="12"
-                                        Text="Audi R8 — это среднемоторный спорткар, выпускающийся кузовами купе. Автомобили второго поколения делают с 2015 года."
+                                        Text="NoN"
                                         TextColor="#E2E2E2" />
                                     <Button
                                         x:Name="moreButton_10"

@@ -33,7 +33,7 @@
                     Margin="27,20,0,20"
                     FontAttributes="Bold"
                     FontSize="38"
-                    Text="Я заебался"
+                    Text="-"
                     TextColor="White" />
             </Frame>
         </StackLayout>
