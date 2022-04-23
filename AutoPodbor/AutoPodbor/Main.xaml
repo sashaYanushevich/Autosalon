@@ -12,11 +12,8 @@
 
 
     <ContentPage.Content>
-
-
         <StackLayout>
-
-            <Grid Margin="0,45,20,0">
+            <Grid Margin="0,45,20,20">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="250" />
                     <ColumnDefinition Width="*" />
@@ -52,6 +49,24 @@
                     BackgroundColor="Transparent"
                     HorizontalOptions="End"
                     Source="sortByIcon.png" />
+                <local1:BorderlessPicker
+                    x:Name="picker"
+                    Title="Выберите последовательность:"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    SelectedIndex="0"
+                    SelectedIndexChanged="picker_SelectedIndexChanged"
+                    TextColor="Transparent"
+                    TitleColor="Transparent">
+                    <Picker.Items>
+                        <x:String>Случайная</x:String>
+                        <x:String>По цене ↑</x:String>
+                        <x:String>По цене ↓</x:String>
+                        <x:String>Новые по году</x:String>
+                        <x:String>Старые по году</x:String>
+
+                    </Picker.Items>
+                </local1:BorderlessPicker>
                 <ImageButton
                     x:Name="configButton"
                     Grid.Row="0"
@@ -61,10 +76,10 @@
                     HorizontalOptions="Center"
                     Source="configIcon.png" />
             </Grid>
-            <ScrollView>
+            <ScrollView x:Name="List">
                 <StackLayout>
                     <Label
-                        Margin="27,25,0,0"
+                        Margin="27,5,0,0"
                         FontAttributes="Bold"
                         FontSize="35"
                         Text="Выберите машину"
@@ -899,6 +914,23 @@
                             </Frame>
                         </Grid>
                     </Frame>
+                    <Button
+                        x:Name="nextFrames"
+                        Margin="0,0,0,20"
+                        BackgroundColor="#1F6BFF"
+                        BorderColor="#82A5FF"
+                        BorderWidth="1"
+                        Clicked="nextFrames_Clicked"
+                        CornerRadius="7"
+                        FontAttributes="Bold"
+                        FontFamily="OpenSans-Bold2.ttf"
+                        FontSize="12"
+                        HeightRequest="40"
+                        HorizontalOptions="Center"
+                        Text="Следующее"
+                        TextColor="White"
+                        VerticalOptions="Center"
+                        WidthRequest="125" />
                 </StackLayout>
             </ScrollView>
         </StackLayout>

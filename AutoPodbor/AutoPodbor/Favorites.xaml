@@ -9,7 +9,7 @@
     IconImageSource="favoritesIcon.png">
     <ContentPage.Content>
         <StackLayout>
-            <Frame
+            <!--<Frame
                 Margin="0,47,0,0"
                 Padding="0"
                 BackgroundColor="White"
@@ -99,7 +99,15 @@
                         </Grid>
                     </Frame>
                 </Grid>
-            </Frame>
+            </Frame>-->
+            <Picker x:Name="picker" >
+                <Picker.Items>
+                    <x:String>C#</x:String>
+                    <x:String>C/C++</x:String>
+                    <x:String>JavaScript</x:String>
+                    <x:String>PHP</x:String>
+                </Picker.Items>
+            </Picker>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
