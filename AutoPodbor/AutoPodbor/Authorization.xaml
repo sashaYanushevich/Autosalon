@@ -18,6 +18,7 @@
                 Text="Авторизация"
                 TextColor="White" />
             <autopodbor:CustomEntry
+                x:Name="loginText"
                 Margin="0,45,0,0"
                 BorderColor="White"
                 BorderWidth="4"
@@ -33,6 +34,7 @@
                 TextColor="White"
                 WidthRequest="285" />
             <autopodbor:CustomEntry
+                x:Name="passText"
                 Margin="0,10,0,0"
                 BorderColor="White"
                 BorderWidth="4"
@@ -49,11 +51,12 @@
                 TextColor="White"
                 WidthRequest="285" />
             <Button
-                x:Name="RegistrationButton"
+                x:Name="AuthButton"
                 Margin="0,35,0,0"
                 BackgroundColor="#1F6BFF"
                 BorderColor="White"
                 BorderWidth="2"
+                Clicked="AuthButton_Clicked"
                 CornerRadius="15"
                 FontAttributes="Bold"
                 FontFamily="OpenSans-Bold2.ttf"

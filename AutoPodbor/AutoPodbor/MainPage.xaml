@@ -10,9 +10,9 @@
     UnselectedTabColor="Gray">
 
 
-    <TabbedPage.Children>
+    <!-- <TabbedPage.Children>
         <local1:Profile />
         <local1:Main />
         <local1:Favorites />
-    </TabbedPage.Children>
+    </TabbedPage.Children>-->
 </TabbedPage>

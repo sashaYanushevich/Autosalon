@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AutoPodbor.AdminPanel"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="AdminPanel"
+    BackgroundColor="Black"
+    BackgroundImageSource="background2.png">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label
+                Margin="0,25,0,0"
+                FontAttributes="Bold"
+                FontSize="35"
+                HorizontalOptions="Center"
+                Text="Админ-Панель"
+                TextColor="White" />
+            <ListView x:Name="requestsList" ItemTapped="requestsList_ItemTapped"/>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

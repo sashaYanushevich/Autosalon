@@ -26,10 +26,14 @@ namespace AutoPodbor
                 loginText.Text = String.Empty;
                 passText.Text = String.Empty;
                 retryPassText.Text = String.Empty;
-            
+
             }
             else
+            {
                 await DisplayAlert("✅ Регистрация", "Регистрация прошла успешно!", "OK");
+                (Application.Current).MainPage = new MainPage();
+
+            }
 
         }
     }
