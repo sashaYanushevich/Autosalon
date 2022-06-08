@@ -10,7 +10,7 @@
     IconImageSource="accountIcon.png">
     <ContentPage.Content>
         <StackLayout>
-            <Label
+                    <Label
                 Padding="35,100,0,0"
                 FontAttributes="Bold"
                 FontFamily="OpenSans-Bold2.ttf"
@@ -23,6 +23,9 @@
                     <ColumnDefinition Width="220" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
                 <Frame
                     Margin="35,20,0,0"
                     BackgroundColor="LightGray"
@@ -78,7 +81,7 @@
                     BackgroundColor="LightGray"
                     BorderColor="White"
                     CornerRadius="13"
-                    HeightRequest="10"
+                    HeightRequest="210"
                     HorizontalOptions="Start"
                     Opacity="0.15"
                     VerticalOptions="Start"
@@ -115,11 +118,11 @@
                         <x:String>Английский</x:String>
                     </Picker.Items>
                 </local1:BorderlessPicker>
-
             </Grid>
             <Button
+                Grid.Row="3"
                 x:Name="exitButton"
-                Margin="35,20,0,0"
+                Margin="35,10,0,0"
                 BackgroundColor="#0047FF"
                 BorderColor="White"
                 BorderWidth="0.5"
@@ -138,9 +141,24 @@
                 </Button.ImageSource>
 
             </Button>
+                    <Label
+                    Margin="30,20,0,0"
+                    FontSize="21"
+                    HorizontalOptions="Center"
+                    Text="Запросы на тест-драйв"
+                    TextColor="White" />
+            <RefreshView RefreshColor="Teal" x:Name="refresh" Refreshing="refresh_Refreshing">
+                <ScrollView>
+                    <ListView x:Name="requestsList" ItemTapped="requestsList_ItemTapped"/>
+
+                </ScrollView>
+
+      
+            </RefreshView>
             <Button
+                IsVisible="false"
                 x:Name="adminButton"
-                Margin="0,200,0,0"
+                Margin="0,10,0,0"
                 BackgroundColor="#0047FF"
                 BorderColor="White"
                 BorderWidth="0.5"
@@ -150,6 +168,9 @@
                 VerticalOptions="End" 
                 Clicked="adminButton_Clicked"
                 />
+
+
+
 
 
         </StackLayout>

@@ -36,12 +36,15 @@
                     Opacity="0.4"
                     WidthRequest="200">
                     <SearchBar
+                        x:Name="search"
                         BackgroundColor="Transparent"
                         CancelButtonColor="Black"
                         Opacity="1"
                         Placeholder="Найти..."
                         PlaceholderColor="Black"
-                        TextColor="Black" />
+                        TextColor="Black"
+                        SearchButtonPressed="SearchBar_SearchButtonPressed"
+                        />
                 </Frame>
                 <ImageButton
                     Grid.Row="0"
@@ -133,19 +136,15 @@
                                         Text="NoN"
                                         TextColor="White" />
                                     <ImageButton
+                                        x:Name="addFavarite1"
+                                        Clicked="addFavarite1_Clicked"
                                         Grid.Row="0"
                                         Grid.Column="2"
                                         BackgroundColor="Transparent"
+                                        
                                         HorizontalOptions="Center"
                                         Source="favoritesIcon.png"
                                         WidthRequest="18" />
-                                    <ImageButton
-                                        Grid.Row="0"
-                                        Grid.Column="1"
-                                        BackgroundColor="Transparent"
-                                        HorizontalOptions="Center"
-                                        Source="hideIcon.png"
-                                        WidthRequest="23" />
                                     <Label
                                         x:Name="DiscriptionLabel_1"
                                         Grid.Row="1"
@@ -175,6 +174,7 @@
                             </Frame>
                         </Grid>
                     </Frame>
+                    
                     <Frame
                         Margin="10,15,10,0"
                         BackgroundColor="Transparent"
@@ -215,19 +215,14 @@
                                         Text="NoN"
                                         TextColor="White" />
                                     <ImageButton
+                                        x:Name="addFavarite2"
+                                       Clicked="addFavarite2_Clicked"
                                         Grid.Row="0"
                                         Grid.Column="2"
                                         BackgroundColor="Transparent"
                                         HorizontalOptions="Center"
                                         Source="favoritesIcon.png"
                                         WidthRequest="18" />
-                                    <ImageButton
-                                        Grid.Row="0"
-                                        Grid.Column="1"
-                                        BackgroundColor="Transparent"
-                                        HorizontalOptions="Center"
-                                        Source="hideIcon.png"
-                                        WidthRequest="23" />
                                     <Label
                                         x:Name="DiscriptionLabel_2"
                                         Grid.Row="1"
@@ -298,19 +293,15 @@
                                         Text="NoN"
                                         TextColor="White" />
                                     <ImageButton
+                                        x:Name="addFavarite3"
+                                        Clicked="addFavarite3_Clicked"
                                         Grid.Row="0"
                                         Grid.Column="2"
                                         BackgroundColor="Transparent"
                                         HorizontalOptions="Center"
                                         Source="favoritesIcon.png"
                                         WidthRequest="18" />
-                                    <ImageButton
-                                        Grid.Row="0"
-                                        Grid.Column="1"
-                                        BackgroundColor="Transparent"
-                                        HorizontalOptions="Center"
-                                        Source="hideIcon.png"
-                                        WidthRequest="23" />
+ 
                                     <Label
                                         x:Name="DiscriptionLabel_3"
                                         Grid.Row="1"
@@ -380,19 +371,15 @@
                                         Text="NoN"
                                         TextColor="White" />
                                     <ImageButton
+                                        x:Name="addFavarite4"
+                                        Clicked="addFavarite4_Clicked"
                                         Grid.Row="0"
                                         Grid.Column="2"
                                         BackgroundColor="Transparent"
                                         HorizontalOptions="Center"
                                         Source="favoritesIcon.png"
                                         WidthRequest="18" />
-                                    <ImageButton
-                                        Grid.Row="0"
-                                        Grid.Column="1"
-                                        BackgroundColor="Transparent"
-                                        HorizontalOptions="Center"
-                                        Source="hideIcon.png"
-                                        WidthRequest="23" />
+
                                     <Label
                                         x:Name="DiscriptionLabel_4"
                                         Grid.Row="1"
@@ -462,19 +449,14 @@
                                         Text="NoN"
                                         TextColor="White" />
                                     <ImageButton
+                                        x:Name="addFavarite5"
+                                        Clicked="addFavarite5_Clicked"
                                         Grid.Row="0"
                                         Grid.Column="2"
                                         BackgroundColor="Transparent"
                                         HorizontalOptions="Center"
                                         Source="favoritesIcon.png"
                                         WidthRequest="18" />
-                                    <ImageButton
-                                        Grid.Row="0"
-                                        Grid.Column="1"
-                                        BackgroundColor="Transparent"
-                                        HorizontalOptions="Center"
-                                        Source="hideIcon.png"
-                                        WidthRequest="23" />
                                     <Label
                                         x:Name="DiscriptionLabel_5"
                                         Grid.Row="1"
@@ -544,19 +526,16 @@
                                         Text="NoN"
                                         TextColor="White" />
                                     <ImageButton
+                                        x:Name="addFavarite6"
+                                        Clicked="addFavarite6_Clicked"
+                                        
                                         Grid.Row="0"
                                         Grid.Column="2"
                                         BackgroundColor="Transparent"
                                         HorizontalOptions="Center"
                                         Source="favoritesIcon.png"
                                         WidthRequest="18" />
-                                    <ImageButton
-                                        Grid.Row="0"
-                                        Grid.Column="1"
-                                        BackgroundColor="Transparent"
-                                        HorizontalOptions="Center"
-                                        Source="hideIcon.png"
-                                        WidthRequest="23" />
+                                    
                                     <Label
                                         x:Name="DiscriptionLabel_6"
                                         Grid.Row="1"
@@ -626,19 +605,15 @@
                                         Text="NoN"
                                         TextColor="White" />
                                     <ImageButton
+                                        x:Name="addFavarite7"
+                                        Clicked="addFavarite7_Clicked"
                                         Grid.Row="0"
                                         Grid.Column="2"
                                         BackgroundColor="Transparent"
                                         HorizontalOptions="Center"
                                         Source="favoritesIcon.png"
                                         WidthRequest="18" />
-                                    <ImageButton
-                                        Grid.Row="0"
-                                        Grid.Column="1"
-                                        BackgroundColor="Transparent"
-                                        HorizontalOptions="Center"
-                                        Source="hideIcon.png"
-                                        WidthRequest="23" />
+                                   
                                     <Label
                                         x:Name="DiscriptionLabel_7"
                                         Grid.Row="1"
@@ -708,19 +683,15 @@
                                         Text="NoN"
                                         TextColor="White" />
                                     <ImageButton
+                                        x:Name="addFavarite8"
+                                        Clicked="addFavarite8_Clicked"
                                         Grid.Row="0"
                                         Grid.Column="2"
                                         BackgroundColor="Transparent"
                                         HorizontalOptions="Center"
                                         Source="favoritesIcon.png"
                                         WidthRequest="18" />
-                                    <ImageButton
-                                        Grid.Row="0"
-                                        Grid.Column="1"
-                                        BackgroundColor="Transparent"
-                                        HorizontalOptions="Center"
-                                        Source="hideIcon.png"
-                                        WidthRequest="23" />
+                                   
                                     <Label
                                         x:Name="DiscriptionLabel_8"
                                         Grid.Row="1"
@@ -795,14 +766,11 @@
                                         BackgroundColor="Transparent"
                                         HorizontalOptions="Center"
                                         Source="favoritesIcon.png"
-                                        WidthRequest="18" />
-                                    <ImageButton
-                                        Grid.Row="0"
-                                        Grid.Column="1"
-                                        BackgroundColor="Transparent"
-                                        HorizontalOptions="Center"
-                                        Source="hideIcon.png"
-                                        WidthRequest="23" />
+                                        WidthRequest="18" 
+                                        x:Name="addFavarite9"
+                                        Clicked="addFavarite9_Clicked"
+                                        />
+                                   
                                     <Label
                                         x:Name="DiscriptionLabel_9"
                                         Grid.Row="1"
@@ -872,19 +840,15 @@
                                         Text="NoN"
                                         TextColor="White" />
                                     <ImageButton
+                                        x:Name="addFavarite10"
+                                        Clicked="addFavarite10_Clicked"
                                         Grid.Row="0"
                                         Grid.Column="2"
                                         BackgroundColor="Transparent"
                                         HorizontalOptions="Center"
                                         Source="favoritesIcon.png"
                                         WidthRequest="18" />
-                                    <ImageButton
-                                        Grid.Row="0"
-                                        Grid.Column="1"
-                                        BackgroundColor="Transparent"
-                                        HorizontalOptions="Center"
-                                        Source="hideIcon.png"
-                                        WidthRequest="23" />
+
                                     <Label
                                         x:Name="DiscriptionLabel_10"
                                         Grid.Row="1"

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 namespace AutoPodbor
 {
-    internal class Car
+    public class Car
     {
         private int id;
         private string mark;

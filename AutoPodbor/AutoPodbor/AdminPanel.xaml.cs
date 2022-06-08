@@ -16,13 +16,23 @@ namespace AutoPodbor
         public AdminPanel()
         {
             InitializeComponent();
-            
             requestsList.ItemsSource = req.Select(n => n.ListViewText);
         }
 
         private async void requestsList_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            await DisplayAlert("1",$"{req[e.ItemIndex].Id} \n {req[e.ItemIndex].Login}","ok");
+            var res = await DisplayAlert($"Заявка №{req[e.ItemIndex].Id}",
+                $"Машина ID - {req[e.ItemIndex].Id_car}\n" +
+                $"Пользователь - {req[e.ItemIndex].Login}[{req[e.ItemIndex].Id_account}]\n" +
+                $"Дата и время - {req[e.ItemIndex].Date}", "Одобрить","Отклонить" );
+            Request.SetState(res, req[e.ItemIndex].Id);
+        }
+
+        private void refresh_Refreshing(object sender, EventArgs e)
+        {
+            req = Request.ReadRequests();
+            requestsList.ItemsSource = req.Select(n => n.ListViewText);
+            refresh.IsRefreshing = false;
         }
     }
 }

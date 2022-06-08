@@ -15,6 +15,7 @@ namespace AutoPodbor
     {
         private List<Car> carsList = new List<Car>();
         private Random RND = new Random();
+        
         public Main()
         {
             InitializeComponent();
@@ -201,54 +202,61 @@ namespace AutoPodbor
             await Navigation.PushModalAsync(new Configure());
         }
 
-        private void moreButton_1_Clicked(object sender, EventArgs e)
+        private async void moreButton_1_Clicked(object sender, EventArgs e)
         {
+            await Navigation.PushModalAsync(new MoreInfo(carsList.FindAll(x => (x.Mark +" " + x.Generation)  == NameLabel_1.Text).ToList()[0]));
+        }
+
+        private async void moreButton_2_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new MoreInfo(carsList.FindAll(x => (x.Mark + " " + x.Generation) == NameLabel_2.Text).ToList()[0]));
 
         }
 
-        private void moreButton_2_Clicked(object sender, EventArgs e)
+        private async void moreButton_3_Clicked(object sender, EventArgs e)
         {
+            await Navigation.PushModalAsync(new MoreInfo(carsList.FindAll(x => (x.Mark + " " + x.Generation) == NameLabel_3.Text).ToList()[0]));
 
         }
 
-        private void moreButton_3_Clicked(object sender, EventArgs e)
+        private async void moreButton_4_Clicked(object sender, EventArgs e)
         {
+            await Navigation.PushModalAsync(new MoreInfo(carsList.FindAll(x => (x.Mark + " " + x.Generation) == NameLabel_4.Text).ToList()[0]));
 
         }
 
-        private void moreButton_4_Clicked(object sender, EventArgs e)
+        private async void moreButton_5_Clicked(object sender, EventArgs e)
         {
+            await Navigation.PushModalAsync(new MoreInfo(carsList.FindAll(x => (x.Mark + " " + x.Generation) == NameLabel_5.Text).ToList()[0]));
 
         }
 
-        private void moreButton_5_Clicked(object sender, EventArgs e)
+        private async void moreButton_6_Clicked(object sender, EventArgs e)
         {
+            await Navigation.PushModalAsync(new MoreInfo(carsList.FindAll(x => (x.Mark + " " + x.Generation) == NameLabel_6.Text).ToList()[0]));
+        }
+
+        private async void moreButton_7_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new MoreInfo(carsList.FindAll(x => (x.Mark + " " + x.Generation) == NameLabel_7.Text).ToList()[0]));
 
         }
 
-        private void moreButton_6_Clicked(object sender, EventArgs e)
+        private async void moreButton_8_Clicked(object sender, EventArgs e)
         {
+            await Navigation.PushModalAsync(new MoreInfo(carsList.FindAll(x => (x.Mark + " " + x.Generation) == NameLabel_8.Text).ToList()[0]));
 
         }
 
-        private void moreButton_7_Clicked(object sender, EventArgs e)
+        private async void moreButton_9_Clicked(object sender, EventArgs e)
         {
+            await Navigation.PushModalAsync(new MoreInfo(carsList.FindAll(x => (x.Mark + " " + x.Generation) == NameLabel_9.Text).ToList()[0]));
 
         }
 
-        private void moreButton_8_Clicked(object sender, EventArgs e)
+        private async void moreButton_10_Clicked(object sender, EventArgs e)
         {
-
-        }
-
-        private void moreButton_9_Clicked(object sender, EventArgs e)
-        {
-
-        }
-
-        private void moreButton_10_Clicked(object sender, EventArgs e)
-        {
-
+            await Navigation.PushModalAsync(new MoreInfo(carsList.FindAll(x => (x.Mark +" " + x.Generation)  == NameLabel_10.Text).ToList()[0]));
         }
 
         private void picker_SelectedIndexChanged(object sender, EventArgs e)
@@ -269,9 +277,77 @@ namespace AutoPodbor
         private void nextFrames_Clicked(object sender, EventArgs e)
         {
             RandomViewCars();
-            List.ScrollToAsync(0, 140, false);
+            List.ScrollToAsync(0, 140, true);
         }
-        
 
+        private void addFavarite1_Clicked(object sender, EventArgs e)
+        {
+            Account.AddFavorite(MainPage.login, carsList.FindAll(x => (x.Mark + " " + x.Generation) == NameLabel_1.Text).ToList()[0].Id);
+            addFavarite1.IsVisible = false;
+        }
+
+        private void addFavarite2_Clicked(object sender, EventArgs e)
+        {
+            Account.AddFavorite(MainPage.login, carsList.FindAll(x => (x.Mark + " " + x.Generation) == NameLabel_2.Text).ToList()[0].Id);
+            addFavarite2.IsVisible = false;
+        }
+
+        private void addFavarite3_Clicked(object sender, EventArgs e)
+        {
+            Account.AddFavorite(MainPage.login, carsList.FindAll(x => (x.Mark + " " + x.Generation) == NameLabel_3.Text).ToList()[0].Id);
+            addFavarite3.IsVisible = false;
+        }
+
+        private void addFavarite4_Clicked(object sender, EventArgs e)
+        {
+            Account.AddFavorite(MainPage.login, carsList.FindAll(x => (x.Mark + " " + x.Generation) == NameLabel_4.Text).ToList()[0].Id);
+            addFavarite4.IsVisible = false;
+        }
+
+        private void addFavarite5_Clicked(object sender, EventArgs e)
+        {
+            Account.AddFavorite(MainPage.login, carsList.FindAll(x => (x.Mark + " " + x.Generation) == NameLabel_5.Text).ToList()[0].Id);
+            addFavarite5.IsVisible = false;
+        }
+
+        private void addFavarite6_Clicked(object sender, EventArgs e)
+        {
+            Account.AddFavorite(MainPage.login, carsList.FindAll(x => (x.Mark + " " + x.Generation) == NameLabel_6.Text).ToList()[0].Id);
+            addFavarite6.IsVisible = false;
+        }
+
+        private void addFavarite7_Clicked(object sender, EventArgs e)
+        {
+            Account.AddFavorite(MainPage.login, carsList.FindAll(x => (x.Mark + " " + x.Generation) == NameLabel_7.Text).ToList()[0].Id);
+            addFavarite7.IsVisible = false;
+        }
+
+        private void addFavarite8_Clicked(object sender, EventArgs e)
+        {
+            Account.AddFavorite(MainPage.login, carsList.FindAll(x => (x.Mark + " " + x.Generation) == NameLabel_8.Text).ToList()[0].Id);
+            addFavarite8.IsVisible = false;
+        }
+
+        private void addFavarite9_Clicked(object sender, EventArgs e)
+        {
+            Account.AddFavorite(MainPage.login, carsList.FindAll(x => (x.Mark + " " + x.Generation) == NameLabel_9.Text).ToList()[0].Id);
+            addFavarite9.IsVisible = false;
+        }
+
+        private void addFavarite10_Clicked(object sender, EventArgs e)
+        {
+            Account.AddFavorite(MainPage.login, carsList.FindAll(x => (x.Mark + " " + x.Generation) == NameLabel_10.Text).ToList()[0].Id);
+            addFavarite10.IsVisible = false;
+        }
+
+        private async void SearchBar_SearchButtonPressed(object sender, EventArgs e)
+        {
+            List<string> cars = new List<string>();
+            foreach (var item in carsList.FindAll(x => x.Mark == search.Text).ToList())
+            {
+                cars.Add(item.Mark + item.Model);
+            }
+           // string action = await DisplayActionSheet("ActionSheet: Send to?", "Cancel", null,cars.ForEach(p=>p.ToString()));
+        }
     }
 }
